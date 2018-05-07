@@ -4,6 +4,14 @@ import { simpleStyle } from "./image-viewer.style"
 
 export class Props {
   /**
+   * self defined cropped width
+   */
+  public width?: number = null
+  /**
+   * self defined cropped height
+   */
+  public height?: number = null
+  /**
    * 是否显示
    */
   public show?: boolean = false
