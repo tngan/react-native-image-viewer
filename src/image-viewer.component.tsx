@@ -471,8 +471,8 @@ export default class ImageViewer extends React.Component<Props, State> {
 
       const Wrapper = ({ children, ...others }: any) => (
         <ImageZoom
-          cropWidth={this.width}
-          cropHeight={this.height}
+          cropWidth={this.props.width || this.width}
+          cropHeight={this.props.height || this.height}
           maxOverflow={this.props.maxOverflow}
           horizontalOuterRangeOffset={this.handleHorizontalOuterRangeOffset}
           responderRelease={this.handleResponderRelease}
@@ -525,8 +525,8 @@ export default class ImageViewer extends React.Component<Props, State> {
           return (
             <ImageZoom
               key={index}
-              cropWidth={this.width}
-              cropHeight={this.height}
+              cropWidth={this.props.width || this.width}
+              cropHeight={this.props.height || this.height}
               maxOverflow={this.props.maxOverflow}
               horizontalOuterRangeOffset={this.handleHorizontalOuterRangeOffset}
               responderRelease={this.handleResponderRelease}
