@@ -6,11 +6,11 @@ export class Props {
   /**
    * self defined cropped width
    */
-  public width?: number = null
+  public width?: number = undefined
   /**
    * self defined cropped height
    */
-  public height?: number = null
+  public height?: number = undefined
   /**
    * 是否显示
    */
